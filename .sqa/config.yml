@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://github.com/3dbionotes-community/3DBIONOTES
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 1.7.0_no_kubectl
+      branch: release/1.7.3
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,32 +15,52 @@ sqa_criteria:
     repos:
       github.com/3dbionotes-community/3DBIONOTES git:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-smalt-camel.sh
-        container: qc.acc_lumpy-dandelion-caiman
+        - /usr/bin/env sh .sqa/script.geeky-bronze-ibis.sh
+        container: qc.acc_squirrely-coral-earwig
   QC.Doc:
     repos:
       github.com/3dbionotes-community/3DBIONOTES find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-buff-hare.sh
-        container: qc.doc_beady-corn-heron
+        - /usr/bin/env sh .sqa/script.homey-beige-rhinoceros.sh
+        container: qc.doc_baggy-puce-sheep
       github.com/3dbionotes-community/3DBIONOTES git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-ultramarine-mouse.sh
-        container: qc.doc_sunny-myrtle-sheepdog
+        - /usr/bin/env sh .sqa/script.skanky-asparagus-markhor.sh
+        container: qc.doc_jumpy-pear-frog
       github.com/3dbionotes-community/3DBIONOTES markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-crimson-stoat.sh
-        container: qc.doc_foggy-amethyst-zonkey
+        - /usr/bin/env sh .sqa/script.slimy-chartreuse-armadillo.sh
+        container: qc.doc_snippy-harlequin-newfoundland
   QC.Lic:
     repos:
       github.com/3dbionotes-community/3DBIONOTES licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-purple-bird.sh
-        container: qc.lic_geeky-blue-tuatara
+        - /usr/bin/env sh .sqa/script.snippy-denim-wombat.sh
+        container: qc.lic_snazzy-tangerine-olm
+  QC.Sec:
+    repos:
+      github.com/3dbionotes-community/3DBIONOTES bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.smelly-tangerine-jellyfish.sh
+        container: qc.sec_bluesy-platinum-moth
+  QC.Sty:
+    repos:
+      github.com/3dbionotes-community/3DBIONOTES flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.flabby-chestnut-insect.sh
+        container: qc.sty_scanty-eggplant-wallaby
+      github.com/3dbionotes-community/3DBIONOTES hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.paltry-lavender-monkey.sh
+        container: qc.sty_slimy-amaranth-newfoundland
+      github.com/3dbionotes-community/3DBIONOTES jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.snazzy-sangria-goose.sh
+        container: qc.sty_queasy-wheat-woodpecker
   QC.Ver:
     repos:
       github.com/3dbionotes-community/3DBIONOTES get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-gold-lizard.sh
-        container: qc.ver_whiny-myrtle-bison
+        - /usr/bin/env sh .sqa/script.cheeky-tangerine-yak.sh
+        container: qc.ver_stuffy-red-kangaroo
 timeout: 1800
