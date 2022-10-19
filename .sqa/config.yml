@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       github.com/3dbionotes-community/3DBIONOTES git:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-firebrick-magpie.sh
-        container: qc.acc_ugly-violet-zebra
+        - /usr/bin/env sh .sqa/script.surly-grey-pinscher.sh
+        container: qc.acc_chewy-cornflower-llama
   QC.Doc:
     repos:
       github.com/3dbionotes-community/3DBIONOTES find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-denim-devil.sh
-        container: qc.doc_squirrely-zucchini-indri
+        - /usr/bin/env sh .sqa/script.freaky-tangerine-zorse.sh
+        container: qc.doc_gummy-thistle-barb
       github.com/3dbionotes-community/3DBIONOTES git:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-jade-salamander.sh
-        container: qc.doc_baggy-cyan-mastiff
+        - /usr/bin/env sh .sqa/script.nippy-amethyst-coati.sh
+        container: qc.doc_skimpy-green-albatross
       github.com/3dbionotes-community/3DBIONOTES markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-aquamarine-macaque.sh
-        container: qc.doc_cheeky-aquamarine-impala
+        - /usr/bin/env sh .sqa/script.sunny-lemon-sheepdog.sh
+        container: qc.doc_lousy-taupe-gopher
   QC.Lic:
     repos:
       github.com/3dbionotes-community/3DBIONOTES licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-auburn-balinese.sh
-        container: qc.lic_woolly-cream-havanese
+        - /usr/bin/env sh .sqa/script.scaly-dandelion-coyote.sh
+        container: qc.lic_sloppy-pink-wombat
   QC.Sty:
     repos:
       github.com/3dbionotes-community/3DBIONOTES jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-xanthic-yak.sh
-        container: qc.sty_lumpy-crimson-vole
+        - /usr/bin/env sh .sqa/script.lousy-champagne-iguana.sh
+        container: qc.sty_ready-mustard-cuscus
       github.com/3dbionotes-community/3DBIONOTES rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-chocolate-cichlid.sh
-        container: qc.sty_skinny-apricot-zonkey
+        - /usr/bin/env sh .sqa/script.wiggy-eggplant-bison.sh
+        container: qc.sty_tasty-sangria-dalmatian
       github.com/3dbionotes-community/3DBIONOTES stylelint:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-seashell-ibis.sh
-        container: qc.sty_sunny-turquoise-dane
+        - /usr/bin/env sh .sqa/script.snippy-carmine-ant.sh
+        container: qc.sty_bluesy-russet-spaniel
   QC.Ver:
     repos:
       github.com/3dbionotes-community/3DBIONOTES get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-cornflower-coati.sh
-        container: qc.ver_cozy-tomato-dachsbracke
+        - /usr/bin/env sh .sqa/script.zippy-sangria-koala.sh
+        container: qc.ver_fuzzy-platinum-shrew
 timeout: 1800
